@@ -1,12 +1,12 @@
 {
     "ams": {
-        "[PACK] Nu-AMS 1.6.2 for FW17.0.0": "shorturl.ac/nuupd1"
+        "[PACK] Nu-AMS 1.6.2 for FW17.0.0": "github.com/nuguitar/Nu.NSW.repo1/releases/latest/download/NuUPD1.zip"
     },
     "misc": {
-	"Nu-Link-Refresh": "shorturl.ac/nulink1",
-	"Nu-fw17.0.0": "shorturl.ac/nufw1",
-        "Nu-ad1": "shorturl.ac/nuad1",
-        "Nu-ad2": "shorturl.ac/nuad2",
+	"Nu-Link-Refresh": "github.com/nuguitar/nulink1/raw/main/nulink.zip",
+	"Nu-fw17.0.0": "github.com/nuguitar/nufw/releases/latest/download/FW.zip",
+        "Nu-ad1": "github.com/nuguitar/nu.nsw.ad1/releases/latest/download/NuAD1.zip",
+        "Nu-ad2": "github.com/nuguitar/nu.nsw.ad2/releases/latest/download/NuAD2.zip",
 	"Nu-ad3": "shorturl.ac/nuad3"
     }
 }

@@ -1,0 +1,12 @@
+{
+    "ams": {
+        "[PACK] Nu-AMS 1.6.2 for FW17.0.0": "shorturl.ac/nuupd1"
+    },
+    "misc": {
+	"Nu-Link-Refresh": "shorturl.ac/nulink1",
+	"Nu-fw17.0.0": "shorturl.ac/nufw1",
+        "Nu-ad1": "shorturl.ac/nuad1",
+        "Nu-ad2": "shorturl.ac/nuad2",
+	"Nu-ad3": "shorturl.ac/nuad3"
+    }
+}
