@@ -1,0 +1,39 @@
+name: Compress Config Folder
+
+on:
+  workflow_dispatch:  # This allows manual triggering of the action
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout repository
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    # Step 2: Install zip tool
+    - name: Install zip
+      run: sudo apt-get install zip
+
+    # Step 3: Remove existing nulink.zip (if it exists)
+    - name: Remove existing zip file
+      run: |
+        if [ -f nulink.zip ]; then
+          git rm nulink.zip
+        fi
+
+    # Step 4: Compress the 'config' folder into nulink.zip
+    - name: Compress folder
+      run: zip -r nulink.zip config/
+
+    # Step 5: Commit and push the zipped file to the main branch using GitHub Token
+    - name: Push zipped file to repository
+      run: |
+        git config --global user.email "nu.guitar@hotmail.com"
+        git config --global user.name "nuguitar"
+        git add nulink.zip
+        git commit -m "Replace nulink.zip in the repository"
+        git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
