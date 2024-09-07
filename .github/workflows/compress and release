@@ -1,0 +1,49 @@
+name: Compress Config Folder and Add to Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version tag (e.g., v1.0.1)'
+        required: true
+        default: v1.0.1  # Set the default version
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install zip
+      run: sudo apt-get install zip
+
+    - name: Remove existing zip file
+      run: |
+        if [ -f nulink.zip ]; then
+          git rm nulink.zip
+        fi
+
+    - name: Compress folder
+      run: zip -r nulink.zip config/
+
+    - name: Push zipped file to repository
+      run: |
+        git config --global user.email "nu.guitar@hotmail.com"
+        git config --global user.name "nuguitar"
+        git add nulink.zip
+        git commit -m "Replace nulink.zip in the repository"
+        git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Create Release and Upload Zip
+      uses: ncipollo/release-action@v1
+      with:
+        tag: ${{ github.event.inputs.version }}
+        name: "Release ${{ github.event.inputs.version }}"
+        body: "Automated release with nulink.zip"
+        files: nulink.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
