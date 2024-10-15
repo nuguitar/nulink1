@@ -1,6 +1,7 @@
 {
     "ams": {
-        "[PACK] Nu-AMS 1.7.1 for FW 18.1.0": "shorturl.ac/nuupd1"
+        "[PACK] Nu-AMS 1.7.1 for FW 18.1.0": "shorturl.ac/nuupd1",
+	"[PACK] Hekate for FW 19.0": "shorturl.ac/nuupd1"    
     },
     "misc": {
 	"Nu-Link-Refresh": "shorturl.ac/nulink1",
