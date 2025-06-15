@@ -1,6 +1,7 @@
 {
     "ams": {
-        "[PACK] Nu-AMS 1.8.0 for FW 19.0.1": "shorturl.re/nuupd1"    
+        "[PACK] Nu-AMS 1.8.0 for FW 19.0.1": "shorturl.re/nuupd1",
+        "[PACK] Nu-AMS 1.9.1 for FW 20.1.1": "https://github.com/nuguitar/Nu.NSW.repo1/releases/download/250615/AMS.1.9.1.FW.21.1.0.-.Trial.zip"    
     },
     "misc": {
 	"Nu-Link-Refresh": "shorturl.re/nulink1",
