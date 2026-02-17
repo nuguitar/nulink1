@@ -1,11 +1,9 @@
 {
     "ams": {
-        "[PACK] Nu-AMS 1.9.4 for FW 20.4.0": "shorturl.re/nuupd1"  
+        "[PACK] Nu-AMS 1.10.2 for FW 21.2": "shorturl.re/nuupd1"  
     },
     "misc": {
 	"Nu-Link-Refresh": "shorturl.re/nulink1",
-	"Nu-FW 20.4.0": "shorturl.re/nufw1",
-	"Nu-ad1": "shorturl.re/nuad1",
-    "Nu-ad2": "shorturl.re/nuad2"
+	"Nu-FW 21.1.0": "shorturl.re/nufw1"
     }
 }
